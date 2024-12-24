@@ -1,0 +1,54 @@
+.brands-list {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-auto-columns: 28rem;
+  justify-items: stretch;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    translate: calc(-4 * 15rem);
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 span {
+  position: relative;
+  display: inline-block;
+  height: 1.25em;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+
+h1 span span {
+  display: block;
+  animation: animateWords 7s infinite ease;
+  animation-delay: 3s;
+}
+
+@keyframes animateWords {
+  100% {
+    transform: translateY(0%);
+  }
+  20% {
+    transform: translateY(-100%);
+  }
+  40% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-300%);
+  }
+  80% {
+    transform: translateY(-400%);
+  }
+}

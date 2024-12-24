@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": "app",
+    "paths": {
+      "@/*": ["app/*"],
+      "@contexts*": ["contexts/*"],
+      "@types*": ["types/*"],
+      "@components*": ["components/*"],
+      "@converters*": ["converters/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/components/InputErrorMessage/InputErrorMessage.tsx",
+    "app/components/CustomInputContainer/CustomInputContainer.jsx",
+    "app/pages/category/[id]/page.jsx",
+    "app/pages/home/components/Carousel/Carousel.jsx",
+    "app/components/SearchInput/SearchInput.tsx",
+    "app/pages/home/components/SlideContent/SlideContent.tsx"
+  ],
+  "exclude": ["node_modules"]
+}
